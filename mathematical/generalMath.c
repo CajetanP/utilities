@@ -3,6 +3,8 @@
 int gcd (int a, int b);
 int lcm (int a, int b);
 
+#define LCM(a,b) (a*b) / gcd(a, b)
+
 void useGcdAndLcm (void);
 
 int main () {
@@ -24,5 +26,6 @@ void useGcdAndLcm () {
     printf ("*** GCD and LCM ***\n");
     printf ("gcd(8,12) = %d\n", gcd(8,12));
     printf ("lcm(8, 12) = %d\n", lcm(8,12));
+    printf ("macro lcm(8, 12) = %d\n", LCM(8,12));
     printf ("\n");
 }
